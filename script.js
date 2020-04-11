@@ -67,8 +67,11 @@ for(let j=0; j<5; j++) {
 console.log(j);
 */
 
+
+
 /* ------------------- Blocks and IIFEs ---------------------- */
 
+/*
 // ES6
 {
     const a = 1;
@@ -85,3 +88,29 @@ console.log(c);
 })();
 
 console.log(c);
+*/
+
+
+
+/* ------------------- Strings ---------------------- */
+
+let firstName = 'Jatin';
+let lastName = 'Rathee';
+const yearOfBirth = 2000;
+
+function calcAge(year) {
+    return 2020 - year;
+}
+
+// ES5
+console.log('This is ' + firstName + ' ' + lastName + '. He was born in ' + yearOfBirth + '. Today he is ' + calcAge(yearOfBirth) + ' years old.');
+
+// ES6 -> Template strings 
+console.log(`This is ${firstName} ${lastName}. He was born in ${yearOfBirth}. Today he is ${calcAge(yearOfBirth)} years old.`);
+
+
+const n = `${firstName} ${lastName}`;
+console.log(n.startsWith('J'));
+console.log(n.endsWith('th'));
+console.log(n.includes(' '));
+console.log(`${firstName} `.repeat(5));
