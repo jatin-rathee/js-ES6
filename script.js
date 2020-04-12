@@ -195,7 +195,6 @@ var box66 = {
 }
 
 box66.clickMe(); 
-*/
 
 
 
@@ -230,3 +229,43 @@ Person.prototype.myFriends6 = function(friends) {
 var friends = ['Bob', 'Jane', 'Mark'];
 
 new Person('Mike').myFriends6(friends);
+
+*/
+
+
+
+
+/* ------------------- Destructuring ---------------------- */
+
+/*
+// ES5
+var jatin = ['jatin', 19];
+// var name = jatin[0];
+// var age = jatin[1];
+
+// ES6
+const [name, age] = ['Jatin', 19];
+console.log(name);
+console.log(age);
+
+const obj = {
+    firstName: 'Jatin',
+    lastName: 'Rathee'
+};
+
+const {firstName, lastName} = obj;
+console.log(firstName, lastName);
+
+const {firstName: a, lastName: b} = obj;
+console.log(a, b);
+
+// ES5
+function calcAgeRetirement(year) {
+    const age = new Date().getFullYear() - year;
+    return [age, 65 - age];
+}
+
+const [age, retirement] = calcAgeRetirement(1990);
+
+console.log(age, retirement);
+*/
